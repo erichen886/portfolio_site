@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
+import { LinkArrow } from "@/components/Icons";
 //TODO: add profile pic generate something from AI
 // import profilePic from "../../public/images/profile/"
 
@@ -27,7 +28,7 @@ const Home = () => {
               />
               <p className="my-4 text-base font-medium">
                 Mini Bio here, but for now here are many words to kind of fill
-                this out. We'll see how it looks in a bit.
+                this out. See how it looks in a bit.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
@@ -38,13 +39,13 @@ const Home = () => {
                 >
                   Resume
                   {/* TODO: add link arrow icon */}
-                  {/* <LinkArrow className={"w-6 ml-1"} /> */}
+                  <LinkArrow className={"w-6 ml-2"} />
                 </Link>
                 {/* TODO: add resume pdf to public folder */}
                 <Link
                   href="mailto:erichen886@gmail.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-2 "
                 >
                   Contact
                 </Link>
