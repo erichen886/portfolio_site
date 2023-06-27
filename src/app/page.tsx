@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
+import Link from "next/link";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 //TODO: add profile pic generate something from AI
@@ -28,7 +29,26 @@ const Home = () => {
                 Mini Bio here, but for now here are many words to kind of fill
                 this out. We'll see how it looks in a bit.
               </p>
-              <div></div>
+              <div className="flex items-center self-start mt-2">
+                <Link
+                  href="/dummy.pdf"
+                  target={"_blank"}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  download={true}
+                >
+                  Resume
+                  {/* TODO: add link arrow icon */}
+                  {/* <LinkArrow className={"w-6 ml-1"} /> */}
+                </Link>
+                {/* TODO: add resume pdf to public folder */}
+                <Link
+                  href="mailto:erichen886@gmail.com"
+                  target={"_blank"}
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </Layout>
