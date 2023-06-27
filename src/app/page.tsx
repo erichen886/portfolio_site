@@ -19,9 +19,16 @@ const Home = () => {
               {/* TODO:Uncomment when generate profile pic */}
               {/* <Image src={profilePic} alt="Eric Chen" className="w-full h-auto" /> */}
             </div>
-            <div className="w-1/2">
-              <AnimatedText text="Some slogan here" className="text-6xl" />
-              <p>Mini Bio here</p>
+            <div className="w-1/2 flex flex-col items-center self-center">
+              <AnimatedText
+                text="Some slogan here"
+                className="!text-6xl !text-left"
+              />
+              <p className="my-4 text-base font-medium">
+                Mini Bio here, but for now here are many words to kind of fill
+                this out. We'll see how it looks in a bit.
+              </p>
+              <div></div>
             </div>
           </div>
         </Layout>
