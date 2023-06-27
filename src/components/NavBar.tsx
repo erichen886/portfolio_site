@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { usePathname } from "next/navigation";
+import { LinkedInIcon, GithubIcon } from "./Icons";
+import { motion } from "framer-motion";
 
 type CustomLinkProps = {
   href: string;
@@ -34,13 +36,25 @@ const NavBar = () => {
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="ml-4" />
       </nav>
-      <nav>
-        <Link href="/" target={"_blank"}>
-          LinkedIn
-        </Link>
-        <Link href="/" target={"_blank"}>
-          Github
-        </Link>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://www.linkedin.com/in/ericchen886/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mr-3"
+        >
+          <LinkedInIcon />
+        </motion.a>
+        <motion.a
+          href="https://github.com/erichen886"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 ml-3"
+        >
+          <GithubIcon />
+        </motion.a>
       </nav>
       {/* TODO: check if this is actually centered */}
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
