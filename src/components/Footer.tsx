@@ -5,11 +5,11 @@ import { copyFile } from "fs";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg ">
-      <Layout className="py-8 flex items-center justify-between">
+    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg  ">
+      <Layout className="py-8 flex items-center justify-between p-4">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className="flex items-center">
-          Build With<span className="text-primary text-2xl px-1">&#9825;</span>
+          Built With<span className="text-primary text-2xl px-1">&#9825;</span>
           by&nbsp;
           <Link href="/" className="underline underline-offset-2">
             Eric Chen

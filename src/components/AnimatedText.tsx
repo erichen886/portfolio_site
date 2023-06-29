@@ -31,7 +31,7 @@ const singleWord = {
 
 type ATProps = {
   text: string;
-  className: string;
+  className?: string;
 };
 
 const AnimatedText = ({ text, className = "" }: ATProps) => {
