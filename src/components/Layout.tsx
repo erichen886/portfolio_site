@@ -10,9 +10,7 @@ const Layout = ({
   className = "",
 }: PropsWithChildren<LayoutProps>) => {
   return (
-    <div
-      className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}
-    >
+    <div className={`w-full inline-block z-0 bg-light ${className}`}>
       {children}
     </div>
   );

@@ -19,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} font-mont`}>
-        <NavBar />
-        {children}
-        <Footer />
+        <div className="flex flex-col min-h-screen ">
+          <NavBar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
