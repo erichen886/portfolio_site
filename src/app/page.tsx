@@ -5,16 +5,23 @@ import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
+import { Metadata } from "next";
 //TODO: add profile pic generate something from AI
 // import profilePic from "../../public/images/profile/"
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Write some description",
+};
 
 const Home = () => {
   return (
     <>
-      <Head>
+      {/* TODO: this stuff is now in the metadata import in nextjs */}
+      {/* <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="./favicon.ico" />
-      </Head>
+      </Head> */}
       <main className="flex items-center text-dark w-full self-stretch grow ">
         <Layout className="flex bg-light p-32 self-stretch">
           <div className="flex items-center justify-between w-full">
