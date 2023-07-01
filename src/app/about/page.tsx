@@ -4,6 +4,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import { Metadata } from "next";
 import Image from "next/image";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 export const metadata: Metadata = {
   title: "About Eric",
@@ -15,7 +18,7 @@ const About = () => {
     <>
       <main className="flex w-full flex-col items-center justify-stretch grow">
         <Layout className="pt-16 flex flex-col justify-stretch grow">
-          <AnimatedText text="Another slogan or moto" className="text-2xl" />
+          <AnimatedText text="Another slogan or moto" className="text-6xl" />
           <div className="grid w-full grid-cols-8 gap-4 justify-stretch grow">
             <div className="col-span-3 flex flex-col items-start justify-start p-4 self-center">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
@@ -48,6 +51,9 @@ const About = () => {
               PICTURE HERE
             </div>
           </div>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
