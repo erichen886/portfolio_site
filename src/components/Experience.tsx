@@ -50,7 +50,7 @@ const Details = ({
     </li>
   );
 };
-
+// TODO: Fix the scroll animation progress
 const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({

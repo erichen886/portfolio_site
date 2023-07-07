@@ -39,6 +39,7 @@ const Education = () => {
     target: ref,
     offset: ["start end", "center start"],
   });
+  //   TODO: Fix the scroll progress animation
   return (
     <div className="my-64">
       <h2 className="font-bold text-6xl mb-32 w-full text-center">Education</h2>

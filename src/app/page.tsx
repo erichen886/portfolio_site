@@ -10,7 +10,7 @@ import { Metadata } from "next";
 // import profilePic from "../../public/images/profile/"
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Eric Chen | Home",
   description: "Write some description",
 };
 
