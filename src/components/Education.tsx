@@ -10,7 +10,7 @@ type DetailsProps = {
 };
 
 const Details = ({ type, time, place, info }: DetailsProps) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLLIElement | null>(null);
   return (
     <li
       ref={ref}

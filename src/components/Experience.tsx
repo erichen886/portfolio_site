@@ -19,7 +19,7 @@ const Details = ({
   address,
   work,
 }: DetailsProps) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLLIElement | null>(null);
   return (
     <li
       ref={ref}
