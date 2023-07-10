@@ -3,8 +3,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 //TODO: Look into other designs.
+type skillProps = {
+  name: string;
+  x: string;
+  y: string;
+};
 
-const Skill = ({ name, x, y }) => {
+const Skill = ({ name, x, y }: skillProps) => {
   return (
     <motion.div
       className="flex items-center justify-center rounded-full font-semibold bg-dark text-light 
